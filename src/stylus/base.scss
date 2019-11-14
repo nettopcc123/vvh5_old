@@ -1,0 +1,134 @@
+@import './comm.scss';
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 376px) {
+  html {
+    font-size: 26.66vw;
+  }
+}
+
+
+html {
+  min-height: 100vh;
+  background: $main-bg;
+}
+
+body {
+  margin: 0 auto !important;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100% !important;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+* {
+  margin: 0;
+  padding: 0;
+  touch-action: pan-y;
+  font-size: 0.12rem;
+  font-family: 'PingFangSC-Semibold', 'Lato', sans-serif, 'Helvetica Neue', Helvetica, Arial;
+}
+ul {
+  list-style: none;
+}
+input[type='text'],
+input[type='password'] {
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: $inp-p;
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: $inp-p;
+}
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder, 
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder {
+  color: $inp-p;
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow:none;
+}
+.ff-input{
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  resize: none;
+  font-size: inherit;
+  color: inherit;
+}
+input::-webkit-input-placeholder {
+    color: rgba($font-color, 0.3);
+}
+input:-moz-placeholder {
+  color: rgba($font-color, 0.3);
+}
+input::-moz-placeholder { 
+  color: rgba($font-color, 0.3);
+}
+input:-ms-input-placeholder {
+  color: rgba($font-color, 0.3);
+}
+
+
+.mt10{
+  margin-top: 0.1rem;
+}
+.mt12{
+  margin-top: 0.12rem;
+}
+.view-main{
+  background:$main-bg
+}
+.f-but{
+  width: 0.75rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border-radius: 0.06rem;
+  background: $message-icon;
+  margin: 0px auto;
+}
+.member-con{
+  height: calc(100vh - var(--f7-navbar-height));
+  overflow: auto;
+}
